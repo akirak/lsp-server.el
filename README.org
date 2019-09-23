@@ -1,0 +1,33 @@
+# -*- mode: org; mode: org-make-toc; -*-
+* lsp-server.el
+This package helps you install language servers for the Emacs [[https://github.com/emacs-lsp/lsp-mode][lsp-mode]].
+It retrieves a package specification from a static configuration or try to discover an instruction from the README of =lsp-mode=.
+It also supports using nix-env for installing npm packages via [[https://github.com/akirak/nix-env-install][nix-env-install]] package.
+Its goal is to provide a VSCode-like coding experience on Emacs for any languages via =lsp-mode=.
+
+#+BEGIN_HTML
+#+END_HTML
+** Table of contents
+:PROPERTIES:
+:TOC: siblings
+:END:
+    -  [[#installation][Installation]]
+    -  [[#usage][Usage]]
+    -  [[#contributing][Contributing]]
+    -  [[#license][License]]
+
+** Installation
+If you want to use Nix for installing server packages, install [[https://github.com/akirak/nix-env-install][nix-env-install]] package as well.
+** Usage
+Run =lsp-server-install= command, select a language server, then it starts installation.
+
+If the command fails to find out how to install the server, it may abort with a message or display a web page on the server.
+** Contributing
+One way to contributing to this package is to add more package specs to =lsp-server-package-alist= for a comprehensive support of languages.
+** License
+GPL v3
+** COMMENT Meta :noexport:
+:PROPERTIES:
+:TOC:      ignore
+:END:
+# The COMMENT keyword prevents GitHub's renderer from showing this entry.
